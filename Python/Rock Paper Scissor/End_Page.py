@@ -8,11 +8,12 @@ root.geometry("400x400")
 
 def endPage(user,bot,res):
   
+    #Customizing result window
     headingFrame = Frame(root,bg="#FFBB18",bd=2)
     headingFrame.place(relx=0.1,rely=0.1,relwidth=0.8,relheight=0.16)
     headingLabel = Label(headingFrame, text="Thank you for playing !", bg='purple', fg='white', font = ('Arial',20))
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
-
+  
     userFrame = Frame(root,bg="black",bd=2)
     userFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.16)
     userLabel = Label(userFrame, text=user, bg='white', fg='blue', font = ('Rockwell',20))
@@ -26,7 +27,8 @@ def endPage(user,bot,res):
     botLabel = Label(botFrame, text=bot, bg='white', fg='red', font = ('Rockwell',20))
     botlblLabel.place(relx=0,rely=0, relwidth=0.5, relheight=1)
     botLabel.place(relx=0.5,rely=0, relwidth=0.5, relheight=1)
-
+  
+    #Customizing background colour
     if res == 'Draw':
             opColor = 'white'
     elif res == 'You win':
@@ -35,10 +37,9 @@ def endPage(user,bot,res):
             opColor = 'Orange'
     else:
            opColor = 'white'
+
+    #Result Display
     resultFrame = Frame(root,bg="black",bd=1)
     resultFrame.place(relx=0.1,rely=0.7,relwidth=0.8,relheight=0.16)
     resultLabel = Label(resultFrame, text=res, bg=opColor, fg='black', font = ('Rockwell',20))
     resultLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
-
-#    endbtn  = Button(root,text="OK",bg='Blue', fg='white', command= )
-#    endbtn.place(relx=0.1,rely=0.8,relwidth=0.8,relheight=0.16)
