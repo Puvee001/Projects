@@ -6,7 +6,7 @@ from End_Page import *
 
 def result(choice):
     bot_choice = random.choice(['scissor','rock','paper'])
-
+    #Evaluvating result
     if (choice == bot_choice):
         #messagebox.showwarning(title='The match has ended' , message= f'Your choice : {choice} \n bot choice : {bot_choice} \n The match is draw :|')
         endPage(choice,bot_choice,'Draw')
