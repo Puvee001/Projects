@@ -2,18 +2,19 @@ from tkinter import *
 from Result import *
 
 
-
+#Creating UI window
 root = Tk()
 root.title("Rock Paper Scissor")
 root.minsize(width = 750, height = 600)
 root.geometry("600x500")
 
-
+#Displaying welcome message
 headingFrame1 = Frame(root,bg="#FFBB00",bd=2)
 headingFrame1.place(relx=0.2,rely=0.1,relwidth=0.6,relheight=0.16)
 headingLabel = Label(headingFrame1, text="Welcome to Rock Paper Scissor Game", bg='black', fg='white', font = ('Arial',18))
 headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
 
+#Buttons to get input
 btn1 = Button(root,text="Rock",bg='White', fg='Black', font=('BritannicBold',30), command =rock)
 btn1.place(relx=0.1,rely=0.4, relwidth=0.2,relheight=0.2)
 
