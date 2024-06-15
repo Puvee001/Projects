@@ -1,5 +1,5 @@
 from tkinter import *
-from PIL import ImageTk,Image#PIL -> Pillow
+from PIL import ImageTk,Image
 import pymysql
 from tkinter import messagebox
 from AddBook import *
@@ -48,7 +48,7 @@ Canvas1.pack(expand=True,fill=BOTH)
 headingFrame1 = Frame(root,bg="#FFBB00",bd=5)
 headingFrame1.place(relx=0.2,rely=0.1,relwidth=0.6,relheight=0.16)
 
-headingLabel = Label(headingFrame1, text="Welcome To CV Library", bg='black', fg='white', font=('Courier',15))
+headingLabel = Label(headingFrame1, text="Welcome To Star Library", bg='black', fg='white', font=('Courier',15))
 headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
 
 btn1 = Button(root,text="Add Book Details",bg='black', fg='white', command=addBook)
