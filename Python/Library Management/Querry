@@ -1,0 +1,9 @@
+#Creating a database
+create database library_management;
+
+#Selecting the database
+use library_management;
+
+#Creating tables
+create table books(bid varchar(10) primary key, title varchar(30), author varchar(30), status varchar(20));
+create table books_issued(bid varchar(10) primary key,issuedTo varchar(30));
