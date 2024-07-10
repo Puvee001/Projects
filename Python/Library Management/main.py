@@ -21,9 +21,7 @@ root.title("Library")
 root.minsize(width=400,height=400)
 root.geometry("600x500")
 
-# Take n greater than 0.25 and less than 5
 same=True
-#n=0.25
 n=0.42
 
 # Adding a background image
